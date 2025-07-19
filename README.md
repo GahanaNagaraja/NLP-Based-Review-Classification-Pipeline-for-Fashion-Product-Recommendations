@@ -41,8 +41,6 @@ This project uses customer reviews and profile features to predict whether a fas
 - `spaCy` – NLP tokenization & lemmatization
 - `joblib` – Model serialization
 
----
-
 ## Dataset
  
 **File:** `reviews.csv`  
@@ -53,8 +51,6 @@ This project uses customer reviews and profile features to predict whether a fas
 - `Positive Feedback Count` – Number of helpful votes
 - `Clothing ID`, `Division Name`, `Department Name`, `Class Name` – Product metadata
 - `Recommended IND` – Target variable (1 = recommended, 0 = not recommended)
-
----
 
 ## Modeling Process
 
@@ -70,8 +66,6 @@ This project uses customer reviews and profile features to predict whether a fas
 - ColumnTransformer to process mixed data types
 - Logistic Regression classifier wrapped in scikit-learn pipeline
 
----
-
 ## Evaluation Metrics
 
 | Metric       | Score     |
@@ -83,17 +77,13 @@ This project uses customer reviews and profile features to predict whether a fas
 
 - **Confusion matrix heatmap** visualized prediction accuracy
 - **TF-IDF token importance** helped interpret model decisions
-
----
-
+- 
 ## Key Findings
 
 - Review text is a highly predictive feature for product recommendation.
 - Structured metadata (e.g., department name, age) adds complementary signal.
 - Logistic regression is effective and interpretable, with excellent class 1 recall.
 - Token-level insights provide transparency into the model’s predictions.
-
----
 
 ## Conclusion
 
